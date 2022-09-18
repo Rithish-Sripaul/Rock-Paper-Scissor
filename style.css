@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #ffd43b;
+  min-height: 100%;
+}
+
+.flex-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100%;
+}
+
+button {
+  padding: 10px;
+}
+
+.title {
+  margin-top: 24px;
+  font-size: 64px;
+  color: #d9480f;
+  text-align: center;
+}
+
+/* MAIN CONTENT */
+.desc {
+  font-size: 48px;
+  font-weight: 700;
+  color: #333;
+
+  margin-bottom: 48px;
+}
+
+.buttons {
+  display: flex;
+  gap: 24px;
+
+  margin-bottom: 41px;
+}
+
+button {
+  background-color: #e67700;
+  border: none;
+  border-radius: 7px;
+  box-shadow: -4px 3px #333;
+  padding: 12px 24px;
+
+  font-size: 32px;
+  color: #eee;
+  font-weight: 500;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+button:hover {
+  transition: 0.25s;
+  background-color: #f76707;
+  box-shadow: -7px 5px #333;
+}
+
+.reset {
+  /* display: none; */
+}
+
+/* SCORE CARD */
+
+.scores {
+  display: flex;
+  width: 100%;
+  /* justify-content: space-around; */
+  justify-content: center;
+  gap: 96px;
+}
+
+.player-card,
+.computer-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 42px;
+}
+
+.player,
+.computer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+
+  width: 240px;
+  padding: 24px 0px;
+  border-radius: 7px;
+  box-shadow: -4px 3px #333;
+
+  background-color: #fab005;
+  transition: 0.25s;
+}
+
+.player--title,
+.computer--title {
+  font-size: 38px;
+  color: #333;
+}
+
+.player--score,
+.computer--score {
+  font-size: 42px;
+  font-weight: 700;
+  color: #333;
+}
+
+.player--choice,
+.computer--choice {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+}
+
+.information {
+  font-size: 32px;
+  font-weight: 700;
+  color: #333;
+}
+
+.info--round {
+  margin-bottom: 41px;
+}
+
+/* GAME */
+.lost {
+  transition: 0.25s;
+  background-color: #f03e3e;
+  box-shadow: none;
+}
+
+.won {
+  transition: 0.25s;
+  background-color: #40c057;
+  box-shadow: -7px 5px #333;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}

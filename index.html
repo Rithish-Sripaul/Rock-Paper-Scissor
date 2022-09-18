@@ -5,11 +5,49 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Rock Paper Scissor</title>
 </head>
 
 <body>
+  <div class="flex-container">
+
+    <h1 class="title">Rock Paper Scissors</h1>
+
+    <div class="container">
+      <p class="desc">Choose an option</p>
+      <div class="buttons">
+        <button class="rock btn--choice" data-key="Rock">Rock</button>
+        <button class="paper btn--choice" data-key="Paper">Paper</button>
+        <button class="scissor btn--choice" data-key="Scissor">Scissor</button>
+        <button class="reset hidden">Play Again</button>
+      </div>
+      <p class="information info--round">-</p>
+      <div class="scores">
+        <div class="player-card">
+
+          <div class="player">
+            <h2 class="player--title">Player</h2>
+            <p class="player--score">0</p>
+          </div>
+          <p class="player--choice">-</p>
+        </div>
+
+        <div class="computer-card">
+          <div class="computer">
+            <h2 class="computer--title">Computer</h2>
+            <p class="computer--score">0</p>
+          </div>
+          <p class="computer--choice">-</p>
+        </div>
+      </div>
+      <p class="information round--count">Round 0</p>
+    </div>
+
+  </div>
   <script src="script.js"></script>
 </body>
 
